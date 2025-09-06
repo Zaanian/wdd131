@@ -79,5 +79,6 @@ li {
 
 footer {
     background-color: rgba(0, 242, 255);
-    border: 20px;
+    padding: 10px;
+    margin: 10px;
 }
