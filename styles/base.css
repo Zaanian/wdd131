@@ -1,9 +1,76 @@
-
-
 * {
-    margin: 0;
-    border: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    
+    text-align: center;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(96, 153, 244, 0.692);
+}
+
+header {
+    background-color: rgb(0, 242, 255);
+    margin: 20px;
+}
+
+#course-title {
+    display: block;
+    margin: 10px;
+    font-size: x-large;
+    border: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    gap: 20px;
+
+}
+
+nav a {
+    color: indigo;
+    padding: 1rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+main {
+    background-color: aquamarine;
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 2fr 1fr;
+}
+
+#card-one {
+    border: 1rem;
+    background-color: aliceblue;
+    margin: 20px;
+    grid-column: 1/2;
+}
+
+#card-two {
+    border: 1rem;
+    background-color: aliceblue;
+    margin: 20px;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    background-color: rgba(0, 242, 255);
+    border: 20px;
+}
