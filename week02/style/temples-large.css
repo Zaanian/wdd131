@@ -1,0 +1,28 @@
+@media screen and (min-width: 740px) {
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
