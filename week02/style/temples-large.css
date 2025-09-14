@@ -24,13 +24,18 @@
         grid-template-columns: 1fr 1fr 1fr;
 
     }
+
     figure {
         margin: 1rem;
         padding: 1rem;
     }
 
+    
+
     #page-title {
         grid-column: 1 / 4;
         text-align: center;
     }
+
+
 }
