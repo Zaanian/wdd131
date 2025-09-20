@@ -1,7 +1,49 @@
-
-
 :root {
     background-color: rgb(72, 156, 41);
 }
 
 
+#fullscreen {
+    display: none;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.data {
+    display: grid;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-bottom: none;
+    background-color: brown;
+}
+
+.data h3 {
+    margin: 5px;
+    padding: 5px;
+    background-color: gray;
+}
+
+.data label {
+    margin: 5px;
+}
+
+
+.weather {
+    padding: 10px;
+    display: grid;
+    border-style: solid;
+    border-width: 2px;
+    background-color: brown;
+}
+
+
+.weather h3 {
+    margin: 5px;
+    padding: 5px;
+    background-color: gray;
+}

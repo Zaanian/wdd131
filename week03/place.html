@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,38 @@
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
-<body>
+
+<body onload="calculateWindChill()">
     <header>
         <h1>Borneo</h1>
     </header>
     <main>
         <div class="contain">
-            <img src="images/hero-image-place-fullscreen.webp" alt="Borneo Orangutan" width="100%" height="100%">
+            <img id="fullscreen" src="images/hero-image-place-fullscreen.webp" alt="Borneo Orangutan" width="100%" height="100%">
+            <img id="mobile" src="images/hero-place-mobile2.webp" alt="Borneo Orangutan" width="100%" height="100%">
             <div class="data">
-                <h4>Data</h4>
-                <label>Area:</label>
-                <label>Population:</label>
-                <label>Capitol:</label>
-                <label>Languages:</label>
-                <label>Currency:</label>
-                <label>Time Zone:</label>
+                <h3>Data</h3>
+                <label>Area: 287,001 mi²</label>
+                <label>Population: 23 million people</label>
+                <label>Capitol: Nusantara</label>
+                <label>Languages: Malay, Indonesian, Chinese, Tamil, and English</label>
+                <label>Currency: Malaysian Ringgit</label>
+                <label>Time Zone: UTC+7</label>
             </div>
             <div class="weather">
-                <h4>Weather</h4>
-                <label for="temperature">Temperature (°F): </label>
-                <label>Conditions: </label>
-                <label for="windspeed">Wind: </label>
-                <label>Wind Chill: </label>
+                <h3>Weather</h3>
+                <label>Temperature (°F): <span id="temperature">70</span></label>
+                <label>Conditions: Partly Cloudy</label>
+                <label>Wind: <span id="windSpeed">4.5</span> Mph</label>
+                <label>Wind Chill: <p id="result"></p></label>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span><span> Stephen Stauffer</span><span> Borneo</span></p>
-        
+        <p>&copy; <span id="currentyear"></span><span> Stephen Stauffer, </span><span> Borneo</span></p>
+
         <p id="lastmodified"></p>
     </footer>
 </body>
+
 </html>

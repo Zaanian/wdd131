@@ -1,0 +1,49 @@
+@media screen and (min-width: 740px) {
+
+    #fullscreen {
+        display: block;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    .contain {
+        position: relative;
+        text-align: center;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 4px;
+        left: 16px;
+        background-color: brown;
+
+    }
+
+    .data h3 {
+        margin: 5px;
+        padding: 5px;
+        background-color: gray;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        background-color: brown;
+    }
+
+    .weather h3 { 
+         margin: 5px;
+        padding: 5px;
+        background-color: gray;
+    }
+
+
+
+
+
+
+
+}
