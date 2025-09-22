@@ -1,6 +1,8 @@
 :root {
     background-color: rgb(72, 156, 41);
-    font-family: 'Courier New', Courier, monospace;
+    margin: 1px;
+
+
 }
 
 
@@ -51,6 +53,3 @@ body {
     background-color: gray;
 }
 
-.weather h3 ::after {
-    content: url(/images/weather-icon.svg);
-}
