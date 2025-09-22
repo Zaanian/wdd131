@@ -1,5 +1,6 @@
 :root {
     background-color: rgb(72, 156, 41);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -7,7 +8,7 @@
     display: none;
 }
 
-.class {
+.responsive {
     width: 100%;
     height: auto;
 }
@@ -53,4 +54,8 @@ body {
     margin: 5px;
     padding: 5px;
     background-color: gray;
+}
+
+.weather h3 ::after {
+    content: url(/images/weather-icon.svg);
 }
