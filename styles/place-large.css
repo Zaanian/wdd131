@@ -2,6 +2,7 @@
 
     #fullscreen {
         display: block;
+
     }
 
     #mobile {
@@ -13,19 +14,14 @@
         height: auto;
     }
 
-    .contain {
-        position: relative;
-        text-align: center;
-    }
+    
 
-    /*.data {
-        position: absolute;
-        bottom: 4px;
-        left: 16px;
+    .data {
         background-color: brown;
         border-bottom: solid;
+        grid-area: 1/1;
 
-    }*/
+    }
 
     .data h3 {
         margin: 5px;
@@ -33,17 +29,18 @@
         background-color: gray;
     }
 
-    /*.weather {
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
+    .weather {
         background-color: brown;
-    }*/
+    }
 
     .weather h3 {
         margin: 5px;
-        padding: 5px;
+        padding: 10px;
         background-color: gray;
+    }
+
+    #icon {
+        display: none;
     }
 
 

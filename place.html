@@ -15,12 +15,12 @@
 
 <body onload="calculateWindChill()">
     <header>
-        <h1>Borneo</h1>
+        <h1 id="title">Borneo</h1>
     </header>
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-image-place-fullscreen.webp" media="(min-width: 780px)">
+                <source srcset="images/hero-image-place-fullscreen3.webp" media="(min-width: 780px)">
                 <img src="images/hero-place-mobile2.webp" alt="Borneo Orangutan" class="responsive">
             </picture>
         </div>
@@ -34,8 +34,8 @@
             <label>Time Zone: UTC+7</label>
         </div>
         <div class="weather">
-            <h3>Weather</h3>
-            <image id="icon" src="images/weather-icon.svg"></image>
+            <h3>Weather <image id="icon" src="images/weather2-icon.svg" alt="Weather Icon"></image>
+            </h3>
             <label>Temperature (°F): <span id="temperature">70</span></label>
             <label>Conditions: Partly Cloudy</label>
             <label>Wind: <span id="windSpeed">4.5</span> Mph</label>

@@ -6,9 +6,13 @@
 }
 
 
+.hero {
+    margin:5px;
+}
 
-
-
+#title {
+    padding: 20px;
+}
 
 body {
     text-align: center;
@@ -53,3 +57,7 @@ body {
     background-color: gray;
 }
 
+#icon {
+        margin: 5px;
+        padding: 5px;
+    }
