@@ -18,14 +18,14 @@
         text-align: center;
     }
 
-    .data {
+    /*.data {
         position: absolute;
         bottom: 4px;
         left: 16px;
         background-color: brown;
         border-bottom: solid;
 
-    }
+    }*/
 
     .data h3 {
         margin: 5px;
@@ -33,15 +33,15 @@
         background-color: gray;
     }
 
-    .weather {
+    /*.weather {
         position: absolute;
         bottom: 8px;
         right: 16px;
         background-color: brown;
-    }
+    }*/
 
-    .weather h3 { 
-         margin: 5px;
+    .weather h3 {
+        margin: 5px;
         padding: 5px;
         background-color: gray;
     }
