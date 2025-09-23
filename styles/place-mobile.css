@@ -6,19 +6,22 @@
 }
 
 
-.hero {
-    margin:5px;
+.responsive {
+    width: 100%;
+    height: auto;
 }
 
 #title {
     padding: 20px;
 }
 
-body {
+main {
     text-align: center;
-    font-family: sans-serif;
 }
 
+#fullscreen {
+    display: none;
+}
 
 .data {
     display: grid;
@@ -30,7 +33,7 @@ body {
     color: aliceblue;
 }
 
-.data h3 {
+.data h2 {
     margin: 5px;
     padding: 5px;
     background-color: gray;
@@ -51,13 +54,12 @@ body {
 }
 
 
-.weather h3 {
+.weather h2 {
     margin: 5px;
     padding: 5px;
     background-color: gray;
 }
 
-#icon {
-        margin: 5px;
-        padding: 5px;
-    }
+#emoti {
+    display: none;
+}

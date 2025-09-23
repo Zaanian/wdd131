@@ -9,40 +9,72 @@
         display: none;
     }
 
-    .class {
-        width: 100%;
-        height: auto;
+
+
+
+    main {
+        position: relative;
     }
 
-    
+    .contain {
+        position: relative;
+    }
 
     .data {
+        position: absolute;
         background-color: brown;
         border-bottom: solid;
-        grid-area: 1/1;
+        bottom: 8px;
+        left: 16px;
+        margin: 5px;
+        margin-bottom: 30px;
+        padding: 5px;
+
 
     }
 
-    .data h3 {
+    .data h2 {
         margin: 5px;
         padding: 5px;
         background-color: gray;
+
     }
 
     .weather {
+        
+        position: absolute;
         background-color: brown;
+        bottom: 16px;
+        right: 8px;
+        margin: 5px;
+        padding: 5px;
     }
 
-    .weather h3 {
+    .weather h2 {
+
         margin: 5px;
         padding: 10px;
         background-color: gray;
+
     }
 
     #icon {
-        display: none;
+        display:none;
     }
 
+    #emoti {
+        display: block;
+    }
+
+
+
+
+
+
+
+    
+
+    
 
 
 
