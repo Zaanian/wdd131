@@ -104,10 +104,10 @@ const temples = [
 
 function cardTemplate(card) {
     return `<table>
-    <tr><td>${card.templeName} </td></tr>
-    <tr><td>${card.location} </td></tr>
-    <tr><td>${card.dedicated} </td></tr>
-    <tr><td>${card.area} </td></tr>
+    <tr><td>Name: ${card.templeName} </td></tr>
+    <tr><td>Location: ${card.location} </td></tr>
+    <tr><td>Dedicated: ${card.dedicated} </td></tr>
+    <tr><td>Area: ${card.area} </td></tr>
     <tr><td><img src=${card.imageUrl} alt=${card.templeName}></td></tr>
     
   </table>`
