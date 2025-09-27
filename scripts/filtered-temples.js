@@ -108,12 +108,40 @@ function cardTemplate(card) {
     <tr><td>${card.location} </td></tr>
     <tr><td>${card.dedicated} </td></tr>
     <tr><td>${card.area} </td></tr>
+    <tr><td><img src=${card.imageUrl} alt=${card.templeName}></td></tr>
     
   </table>`
-}
+};
 function renderCards(card) {
     const html = card.map(cardTemplate);
     document.querySelector("main").innerHTML = html.join("");
+};
+
+// Filters
+
+function filterTest(area) {
+    return area > 90000;
 }
 
+const temLarge = temples.filter(temple => temple.area > 90000);
+const temSmall = temples.filter(temple => temple.area < 10000);
+const temOld = temples.filter(temple => parseInt(temple.dedicated) < 1900);
+const temNew = temples.filter(temple => parseInt(temple.dedicated) > 2000);
+
 //responsive button
+
+homeButton = document.getElementById("home");
+homeButton.addEventListener("click", () => { renderCards(temples) });
+
+oldButton = document.getElementById("old");
+oldButton.addEventListener("click", () => { renderCards(temOld) });
+
+newButton = document.getElementById("New");
+newButton.addEventListener("click", () => { renderCards(temNew) });
+
+
+largeButton = document.getElementById("Large");
+largeButton.addEventListener("click", () => { renderCards(temLarge) });
+
+smallButton = document.getElementById("Small");
+smallButton.addEventListener("click", () => { renderCards(temSmall) });
