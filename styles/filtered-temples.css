@@ -1,0 +1,80 @@
+header {
+    background-color: rgb(71, 119, 119);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+
+    text-align: center;
+    grid-column: 1/2;
+}
+
+main {
+    display: grid;
+}
+
+table {
+    margin: 5px;
+    border-style: solid;
+}
+
+
+/*Mobile View*/
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+
+    color: aquamarine;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: flex;
+    color: aqua;
+    padding: 1rem;
+    font-size: larger;
+
+}
+
+.navigation a:hover,
+.navigation a:active {
+    background-color: black;
+    color: white;
+}
+
+.show li {
+    display: block;
+}
+
+
+#menu.show::before {
+    content: "X";
+}
+
+img {
+    max-width: 100%;
+
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(71, 119, 119);
+}
