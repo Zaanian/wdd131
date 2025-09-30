@@ -41,7 +41,7 @@
     }
 
     .weather {
-        
+
         position: absolute;
         background-color: brown;
         bottom: 16px;
@@ -59,11 +59,16 @@
     }
 
     #icon {
-        display:none;
+        display: none;
     }
 
     #emoti {
-        display: block;
+        display: inline;
+    }
+
+    .weather-display ::after {
+        content: '⛅';
+
     }
 
 
@@ -72,9 +77,8 @@
 
 
 
-    
 
-    
+
 
 
 
