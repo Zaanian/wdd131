@@ -1,0 +1,13 @@
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+header {
+    background-color: green;
+}
+
+h3 {
+    border-style: solid;
+    border-color: rgb(87, 164, 223);
+}
