@@ -40,20 +40,12 @@ const products = [
     }
 ];
 
+const selectProduct = document.getElementById("Myproduct");
 
-function productTable(table) {
-    return `
-    <option value="${table.id}">${table.name}</option>`
-}
-
-function addToList(table) {
-    const html = table.map(productTable);
-    document.querySelector("#product-select").innerHTML = html.join("");
-}
-
-const clickSelect = document.getElementById("product-select");
-
-clickSelect.addEventListener("click", () => { addToList(products) });
+products.forEach(product => {
+    const newOption = new Option(product.name, product.id);
+    selectProduct.add(newOption);
+});
 
 
 
