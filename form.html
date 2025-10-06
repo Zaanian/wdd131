@@ -16,17 +16,17 @@
         <h1>Product Review</h1>
         <form action="review.html" method="get">
             <h2>Product Name</h2>
-            <label for="product-select"></label>
-            <select id="product-select" name="product">
+            <label for="Myproduct">Choose a Product</label>
+            <select id="Myproduct" name="product">
                 <option value="first" disabled selected>Select a Product</option>
             </select>
             <h2>Overall Rating</h2>
             <div class="stars">
-                <input type="radio" id="rating-one" name="star" required><label for="rating-one"></label>
-                <input type="radio" id="rating-two" name="star" required><label for="rating-two"></label>
-                <input type="radio" id="rating-three" name="star" required><label for="rating-three"></label>
-                <input type="radio" id="rating-four" name="star" required><label for="rating-four"></label>
-                <input type="radio" id="rating-five" name="star" required><label for="rating-five"></label>
+                <input type="radio" id="rating-one" name="star" required><label for="rating-one">One</label>
+                <input type="radio" id="rating-two" name="star" required><label for="rating-two">Two</label>
+                <input type="radio" id="rating-three" name="star" required><label for="rating-three">Three</label>
+                <input type="radio" id="rating-four" name="star" required><label for="rating-four">Four</label>
+                <input type="radio" id="rating-five" name="star" required><label for="rating-five">Five</label>
             </div>
             <h2>Date of Installation</h2>
             <input type="date" id="date-install" name="installed" required>
@@ -43,8 +43,8 @@
             <label for="review"></label>
             <textarea id="review" name="written-review"></textarea>
             <h2>Your Name(optional)</h2>
-            <input type="text" id="user" name="username"><label for="user"></label>
-            <input type="submit" value="submit-form"><label for="submit-form"></label>
+            <input type="text" id="user" name="personsName">
+            <input type="submit" value="submit-form">
 
         </form>
     </main>
