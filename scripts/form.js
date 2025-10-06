@@ -51,7 +51,9 @@ function addToList(table) {
     document.querySelector("#product-select").innerHTML = html.join("");
 }
 
-changeAttr = document.getElementById("product-select")
+const clickSelect = document.getElementById("product-select");
+
+clickSelect.addEventListener("click", () => { addToList(products) });
 
 
 
