@@ -3,7 +3,7 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 //get the last modified date
 const lastmodifieddate = document.lastModified
-document.getElementById("lastmodified").textContent = ("Last modified " + lastmodifieddate)
+document.getElementById("lastmodified").textContent = ("Last modified " + lastmodifieddate);
 
 
 //Object array for rocks
@@ -40,7 +40,7 @@ const rocks = [
         type: "",
         image: ""
     },
-    
+
 
 ]
 
@@ -48,7 +48,7 @@ function rockTemplate(rock) {
     return `<table>
     <tr><td>Name: ${rock.name} </td></tr>
     <tr><td>Location: ${rock.type} </td></tr>
-    <tr><td><img src=${rock.image} alt=${rock.name}></td></tr>
+    <tr><td><img loading="lazy" src=${rock.image} alt=${rock.name}></td></tr>
     
   </table>`;
 
@@ -56,5 +56,5 @@ function rockTemplate(rock) {
 
 function renderRocks(rock) {
     const html = rock.map(rockTemplate);
-    document.querySelector("main").innerHTML = html.join("");
+    document.querySelector("#rock-list").innerHTML = html.join("");
 };
