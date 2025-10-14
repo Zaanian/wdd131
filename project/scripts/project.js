@@ -1,6 +1,6 @@
 
-// Set the current year
 
+// Set the current year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 //get the last modified date
@@ -12,34 +12,28 @@ document.getElementById("lastmodified").textContent = ("Last modified " + lastmo
 const rocks = [
     {
         name: "agate",
-        type: "",
-        image: ""
+        image: "images/Agate.jpg"
 
     },
     {
         name: "jasper",
-        type: "",
         image: ""
     },
     {
         name: "quartz",
-        type: "",
         image: ""
     },
     {
         name: "granite",
-        type: "",
         image: ""
     },
     {
         name: "amethyst",
-        type: "",
-        image: ""
+        image: "images/amethyst.jpg"
     },
     {
         name: "garnet",
-        type: "",
-        image: ""
+        image: "images/garnet.jpg"
     },
 
 
@@ -48,8 +42,7 @@ const rocks = [
 function rockTemplate(rock) {
     return `<table>
     <tr><td>Name: ${rock.name} </td></tr>
-    <tr><td>Location: ${rock.type} </td></tr>
-    <tr><td><img loading="lazy" src=${rock.image} alt=${rock.name}></td></tr>
+    <tr><td><img loading="lazy" src=${rock.image} alt=${rock.name} width=100 height=auto></td></tr>
     
   </table>`;
 

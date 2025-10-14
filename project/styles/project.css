@@ -1,3 +1,77 @@
+html {
+    text-align: center;
+}
+
+
+
+header {
+    background-color: green;
+    border-style: solid;
+    border-color: rgb(87, 164, 223);
+
+}
+
+header h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+nav {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    gap: 20px;
+}
+
+nav a {
+    margin: 5px;
+
+
+}
+
+nav a:hover {
+    color: darkblue;
+    text-decoration: overline;
+}
+
+
 main {
+    background-color: rgb(225, 224, 224);
+    border-style: solid;
+    border-color: rgb(87, 164, 223);
     display: grid;
+
+}
+
+p {
+    margin: 10px;
+    padding: 10px;
+}
+
+footer {
+    background-color: green;
+    border-style: solid;
+    border-color: rgb(87, 164, 223);
+}
+
+
+#rock-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+table {
+    margin: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+@media screen and (min-width: 740px) {
+
+
+    
 }
