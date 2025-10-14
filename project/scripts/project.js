@@ -40,13 +40,7 @@ const rocks = [
         type: "",
         image: ""
     },
-    {
-        name: "basalt",
-        type: "",
-        image: ""
-    }
-
-
+    
 
 ]
 
