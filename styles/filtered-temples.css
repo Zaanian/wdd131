@@ -26,9 +26,6 @@ table {
     display: block;
     font-size: 2rem;
     padding: 10px;
-
-    color: aquamarine;
-
 }
 
 #menu::before {
@@ -42,32 +39,10 @@ table {
 
 }
 
-.navigation li {
-    display: none;
-}
-
-.navigation a {
-    display: flex;
-    color: aqua;
-    padding: 1rem;
-    font-size: larger;
-
-}
-
-.navigation a:hover,
-.navigation a:active {
-    background-color: black;
-    color: white;
-}
-
-.show li {
-    display: block;
-}
-
-
 #menu.show::before {
     content: "X";
 }
+
 
 img {
     max-width: 100%;

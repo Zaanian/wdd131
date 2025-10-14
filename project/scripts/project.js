@@ -7,32 +7,43 @@ document.getElementById("currentyear").textContent = new Date().getFullYear();
 const lastmodifieddate = document.lastModified
 document.getElementById("lastmodified").textContent = ("Last modified " + lastmodifieddate);
 
+
+// hamburger button for menu in mobile size
+const hamButton = document.querySelector('#menu');
+const mainnav = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hamButton.classList.toggle('show');
+});
+
+
 //Object array for rocks
 
 const rocks = [
     {
-        name: "agate",
+        name: "Agate",
         image: "images/Agate.jpg"
 
     },
     {
-        name: "jasper",
-        image: ""
+        name: "Jasper",
+        image: "images/Jasper.jpg"
     },
     {
-        name: "quartz",
-        image: ""
+        name: "Rose Quartz",
+        image: "images/rose-quartz-mineral.jpg"
     },
     {
-        name: "granite",
-        image: ""
+        name: "Granite",
+        image: "images/granite.jpg"
     },
     {
-        name: "amethyst",
+        name: "Amethyst",
         image: "images/amethyst.jpg"
     },
     {
-        name: "garnet",
+        name: "Garnet",
         image: "images/garnet.jpg"
     },
 
@@ -42,7 +53,7 @@ const rocks = [
 function rockTemplate(rock) {
     return `<table>
     <tr><td>Name: ${rock.name} </td></tr>
-    <tr><td><img loading="lazy" src=${rock.image} alt=${rock.name} width=100 height=auto></td></tr>
+    <tr><td><img loading="lazy" src=${rock.image} alt=${rock.name}></td></tr>
     
   </table>`;
 
