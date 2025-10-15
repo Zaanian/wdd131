@@ -44,5 +44,15 @@
         text-align: left;
     }
 
+    #page3 {
+        display: block;
+
+    }
+
+    img {
+        width: 350px;
+        height: auto;
+    }
+
 
 }
