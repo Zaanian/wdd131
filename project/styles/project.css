@@ -17,6 +17,9 @@ header h1 {
 }
 
 
+#menu {
+    font-size: x-large;
+}
 
 #menu::before {
     content: "☰";
@@ -60,8 +63,6 @@ main {
     background-color: rgb(225, 224, 224);
     border-style: solid;
     border-color: rgb(87, 164, 223);
-    display: grid;
-
 }
 
 p {

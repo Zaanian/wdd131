@@ -29,6 +29,20 @@
         display: none;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #main-home {
+        display: block;
+    }
+
+    .page2 {
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+    }
 
 
 }
