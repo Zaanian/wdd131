@@ -64,7 +64,14 @@ function renderRocks(rock) {
     document.getElementById("rock-list").innerHTML = html.join("");
 };
 
-renderRocks(rocks)
+let something = 0
+
+
+//
+
+if (document.getElementById("rock-list").textContent = false) {
+    something = 1
+} else { renderRocks(rocks) }
 
 //number of visits to page. uses local staorage.
 const visitsDisplay = document.querySelector(".visits");
